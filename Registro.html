@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
+    <script src="js/java.js"></script>
+</head>
+<body background="img/fondoregistro.jpg">
+    
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" width="30" height="30" alt="">
+        </a>
+        
+        <!-- enlaces -->
+        <div class="collapse navbar-collapse btn-group" id="opciones">   
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/aamac/Documents/PruebaHTML_007/Exp1_Hurtado_Hernandez_Aravena_007D/Productos.html#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/aamac/Documents/PruebaHTML_007/Exp1_Hurtado_Hernandez_Aravena_007D/Ropa.html">Ropa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accesorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Registro</a>
+            </li>            
+          </ul>
+        </div>
+      </nav>
+      <br>
+
+    <div class="row">
+    <div class="col-lg-8 mx-auto">
+      
+        <form id="regForm" name="sentMessage" novalidate="novalidate">
+          <h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">Registro Cliente</h1>
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    <input class="form-control" id="nonmbre" type="text" placeholder="Nombre Completo" required="required" />
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    <input class="form-control" id="email" type="email" placeholder="Email" required="required" />
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    <input class="form-control" id="num" type="tel" placeholder="Numero de telefono" required="required"  />
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input class="form-control" id="date" type="date" placeholder="Fecha Nacimiento" required="required"  />
+                  <p class="help-block text-danger"></p>
+              </div>
+          </div>
+            <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                    <input class="form-control" id="contra" type="password" placeholder="Contraseña" required="required" />
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input class="form-control" id="nuevcontra" type="password" placeholder="Ingrese Nuevamente Contraseña" required="required" />
+                  <p class="help-block text-danger"></p>
+              </div>
+          </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input class="form-control" id="direccion" type="tel" placeholder="Direccion" required="required" data-validation-required-message="Ingrese su Direccion" />
+                  <p class="help-block text-danger"></p>
+              </div>
+          </div>
+            <br />
+            <div id="success"></div>
+            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Guardar</button></div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
