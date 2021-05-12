@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
-    <script src="js/java.js"></script>
+    <script src= "js/java.js"></script>
 </head>
-<body background="img/fondoregistro.jpg">
+<body >
     
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
@@ -43,57 +43,49 @@
     <div class="row">
     <div class="col-lg-8 mx-auto">
       
-        <form id="regForm" name="sentMessage" novalidate="novalidate">
+        <form action="#" method="post" onsubmit="return validacion();">
           <h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">Registro Cliente</h1>
+          <br><br>
             <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                    <input class="form-control" id="nonmbre" type="text" placeholder="Nombre Completo" required="required" />
-                    <p class="help-block text-danger"></p>
+                    <input class="form-control" name="nombre"  id="nombre" type="text" placeholder="Nombre Completo" />
+                    
                 </div>
             </div>
             <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                    <input class="form-control" id="email" type="email" placeholder="Email" required="required" />
-                    <p class="help-block text-danger"></p>
+                    <input class="form-control" name="email" id="email" type="email" placeholder="Email"/>
                 </div>
             </div>
             <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                    <input class="form-control" id="num" type="tel" placeholder="Numero de telefono" required="required"  />
-                    <p class="help-block text-danger"></p>
+                    <input class="form-control" name="fono" id="fono" type="number" placeholder="Numero de telefono"   />
                 </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <input class="form-control" id="date" type="date" placeholder="Fecha Nacimiento" required="required"  />
-                  <p class="help-block text-danger"></p>
+                  <input class="form-control" name="fechan" id="fechan" type="date" placeholder="Fecha Nacimiento" min="1990-01-01"  />
               </div>
           </div>
             <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                    <input class="form-control" id="contra" type="password" placeholder="Contraseña" required="required" />
-                    <p class="help-block text-danger"></p>
+                    <input class="form-control" id="contra" id="contra" type="password" placeholder="Contraseña"  />
                 </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <input class="form-control" id="nuevcontra" type="password" placeholder="Ingrese Nuevamente Contraseña" required="required" />
-                  <p class="help-block text-danger"></p>
-              </div>
-          </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <input class="form-control" id="direccion" type="tel" placeholder="Direccion" required="required" data-validation-required-message="Ingrese su Direccion" />
-                  <p class="help-block text-danger"></p>
+                  <input class="form-control" name="direccion" id="direccion" type="text" placeholder="Direccion" />
               </div>
           </div>
             <br />
             <div id="success"></div>
-            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Guardar</button></div>
+            <input type="submit" value="Registro" class="btn-enviar">
+            <div class="form-group"><button class="btn btn-primary btn-xl" type="submit">Enviar</button></div>
         </form>
     </div>
 </div>
 
 
 </body>
+
 </html>

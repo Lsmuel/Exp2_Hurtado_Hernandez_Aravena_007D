@@ -345,7 +345,7 @@ top: 325%;
     line-height: 2rem;
   }
 
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
     .portfolio-modal .portfolio-modal-title {
       font-size: 3rem;
       line-height: 2.5rem;
@@ -356,12 +356,12 @@ top: 325%;
     margin-bottom: 1rem;
   }
 
-  .floating-label-form-group {
+.floating-label-form-group {
     position: relative;
     border-bottom: 1px solid #e9ecef;
   }
-  .floating-label-form-group input,
-  .floating-label-form-group textarea {
+.floating-label-form-group input,
+.floating-label-form-group textarea {
     font-size: 1.5em;
     position: relative;
     z-index: 1;
@@ -373,7 +373,7 @@ top: 325%;
     background: none;
     box-shadow: none !important;
   }
-  .floating-label-form-group label {
+.floating-label-form-group label {
     font-size: 0.85em;
     line-height: 1.764705882em;
     position: relative;
@@ -384,21 +384,32 @@ top: 325%;
     transition: top 0.3s ease, opacity 0.3s ease;
     opacity: 0;
   }
-  .floating-label-form-group:not(:first-child) {
+.floating-label-form-group:not(:first-child) {
     padding-left: 14px;
     border-left: 1px solid #e9ecef;
   }
   
-  .floating-label-form-group-with-value label {
+.floating-label-form-group-with-value label {
     top: 0;
     opacity: 1;
   }
   
-  .floating-label-form-group-with-focus label {
+.floating-label-form-group-with-focus label {
     color: #1abc9c;
   }
   
-  form .row:first-child .floating-label-form-group {
+form.row:first-child .floating-label-form-group {
     border-top: 1px solid #e9ecef;
   }
 
+.error-control {
+    border: 1px solid red;
+}
+
+label.error {
+    color: red;
+    width: 300px;
+    font-size: 0.8em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
