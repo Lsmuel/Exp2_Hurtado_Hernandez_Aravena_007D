@@ -88,4 +88,10 @@ function validacion2(){
 
 }
 
-
+function iniciarMap(){
+    var coord= {lat:-33.477669 ,lng:-70.642364};
+    var map = new google.maps.Map(document.getElementById('map'),{
+        zoom: 10,
+        center: coord
+    })
+}
