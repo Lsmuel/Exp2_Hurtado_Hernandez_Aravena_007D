@@ -30,10 +30,6 @@ function validacion(){
         alert("Ingrese su nombre");
         return false
     }
-    if(nombre.length<10){
-        alert("Minimo 10 caracteres");
-        return false
-    }
     if( email === ""){
         alert("Ingrese su email");
         return false
@@ -75,10 +71,6 @@ function validacion(){
         alert("Ingrese su direccion");
         return false
     }
-    if( direccion.length<5){
-        alert("Minimo 5 caracteres");
-        return false
-    }
  
 
 }
@@ -98,10 +90,6 @@ function validacion2(){
     var emailR = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     if(zapa === ""){
         alert("Ingrese modelo de zapatilla");
-        return false
-    }
-    if(zapa.length<5){
-        alert("Minimo 5 caracteres");
         return false
     }
     if(talla === ""){
@@ -149,10 +137,6 @@ function validacion2(){
     
     if( direccion === ""){
         alert("Ingrese su direccion");
-        return false
-    }
-    if( direccion.length<5){
-        alert("Minimo 5 caracteres");
         return false
     }
     if(motivo === ""){

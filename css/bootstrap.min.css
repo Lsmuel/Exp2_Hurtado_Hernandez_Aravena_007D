@@ -429,16 +429,20 @@ label.error {
 .go-top-button {
     width: 0rem;
     height: 0rem;
-    background: #c69500;
-    border-radius: 50%;
     cursor: pointer;
     transition: .2s;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
 
+.icontop{
+  position: absolute;
+  width: 70%; 
+  height: 60%;
+  left: 20%;
+}
 .go-top-button i {
     position: absolute;
     font-size: 1.7rem;
