@@ -78,8 +78,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
         'NAME': '127.0.0.1:1521/xe',
-        'USER': 'c##turboS',
-        'PASSWORD': '8355',
+        'USER': 'c##sneakers',
+        'PASSWORD': 'prueba',
         'TEST': {
             'USER': 'default_test',
             'TBLSPACE': 'default_test_tbls',
