@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"> 
-    
+    {%load static%}
+    <link href="{% static 'extension/css/style.css'%}" type="text/css" rel="stylesheet"> 
+    <link href="{%static 'extension/css/bootstrap.min.css'%}" type="text/css" rel="stylesheet"> 
+
 </head>
 <body >
-    
+    {%load static%}
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
           <span class="navbar-toggler-icon"></span>
@@ -17,7 +20,7 @@
         
         <!-- logo -->
         <a class="navbar-brand" href="file:///C:/Users/aamac/Documents/PruebaHTML_007/Exp2_Hurtado_Hernandez_Aravena_007D/Productos.html">
-          <img src="img/logo.png" width="30" height="30" alt="">
+          <img src="{% static 'extension/img/logo.png' %}" width="30" height="30" alt="">
         </a>
         
         <!-- enlaces -->
@@ -96,27 +99,27 @@
     <section class="mb-4">
   
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-facebook-f"><img class="icon" src="iconos/facebook.png"></i
+        ><i class="fab fa-facebook-f"><img class="icon" src="{% static 'extension/iconos/facebook.png' %}"></i
       ></a>
   
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-         ><i class="fab fa-twitter"> <img class="icon" src="iconos/twitter.png"></i
+         ><i class="fab fa-twitter"> <img class="icon" src="{% static 'extension/iconos/gorjeo.png' %}"></i
       ></a>
   
       <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        ><i class="fab fa-correo"> <img class="icon" src="iconos/correo-electronico.png"></i
+        ><i class="fab fa-correo"> <img class="icon" src="{% static 'extension/iconos/correo-electronico.png' %}"></i
       ></a>
   
       <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/mr__cardo/" role="button" target="_blank"
-        ><i class="fab fa-instagram"><img class="icon" src="iconos/instagram2.png"></i
+        ><i class="fab fa-instagram"><img class="icon" src="{% static 'extension/iconos/instagram2.png' %}"></i
       ></a>
   
       <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/samuel-hurtado-9a3b711a0/" role="button" target="_blank"
-        ><i class="fab fa-linkedin-in"><img class="icon" src="iconos/linkedin.png"></i
+        ><i class="fab fa-linkedin-in"><img class="icon" src="{% static 'extension/iconos/linkedin.png' %}"></i
       ></a>
   
       <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Lsmuel/Exp1_Hurtado_Hernandez_Aravena_007D" role="button" target="_blank"
-        ><i class="fab fa-github"><img class="icon" src="iconos/github.png"></i
+        ><i class="fab fa-github"><img class="icon" src="{% static 'extension/iconos/github.png' %}"></i
       ></a>
   
     </section>
@@ -148,8 +151,8 @@
       </form>
     </section>
   
-     <a href="file:///C:/Users/aamac/Documents/PruebaHTML_007/Exp2_Hurtado_Hernandez_Aravena_007D/Productos.html"><img src="img/LogoNegro.png" class="img-fluid logon center-xs" alt="Responsive image">
-    <a href="https://www.ccs.cl/#" target="_blank"><img class="img-fluid camara" src="img/footer-badges.png" alt="Responsive image">
+     <a href="file:///C:/Users/aamac/Documents/PruebaHTML_007/Exp2_Hurtado_Hernandez_Aravena_007D/Productos.html"><img src="{% static 'extension/img/LogoNegro.png' %}" class="img-fluid logon center-xs" alt="Responsive image">
+    <a href="https://www.ccs.cl/#" target="_blank"><img class="img-fluid camara" src="{% static 'extension/img/footer-badges.png' %}" alt="Responsive image">
     </div>
     <section>
       <div class="row">
@@ -199,7 +202,7 @@
   
   </footer>
 
-  <script src="js/java.js"></script>
+  <script src="{%static 'extension/js/java.js'%}"></script>
 </body>
 
 </html>
