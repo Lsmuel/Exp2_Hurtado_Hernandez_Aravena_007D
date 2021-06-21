@@ -6,7 +6,7 @@ def registro(request):
 def zapatillas(request):
     return render (request, 'zapatillas.html')
 def productos(request):
-    return render (request, 'form_crearZapatilla.html')
+    return render (request, 'extension/form_crearZapatilla.html')
 
 def form_zapatilla(request):
     if request.method =='POST':
@@ -16,7 +16,7 @@ def form_zapatilla(request):
             return redirect('zapatillas')
     else:
         zapatilla_form=ZapatillaForm()
-    return render(request, 'form_crearZapatilla.html', {'zapatilla_form': zapatilla_form})
+    return render(request, 'extension/form_crearZapatilla.html', {'zapatilla_form': zapatilla_form})
 
 def form_Ropa(request):
     if request.method =='POST':
@@ -27,4 +27,5 @@ def form_Ropa(request):
     else:
         ropa_form=RopaForm()
 
-    return render(request, 'form_crearZapatilla.html', {'ropa_form': ropa_form})
+    return render(request, 'extension/form_crearZapatilla.html', {'ropa_form': ropa_form})
+

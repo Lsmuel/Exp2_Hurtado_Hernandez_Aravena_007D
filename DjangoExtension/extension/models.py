@@ -13,3 +13,7 @@ class Ropa(models.Model):
     tallaRopa = models.CharField(max_length=5, verbose_name='Talla Ropa')
     def __str__(self):
         return(self.tallaRopa)
+
+
+
+        
