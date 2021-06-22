@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Ver</title> 
+  <title >Administracion de productos</title> 
   {%load static%}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -40,30 +40,31 @@
         <li class="nav-item">
           <a class="nav-link" href="file:///C:/Users/aamac/Documents/PruebaHTML_007/Exp2_Hurtado_Hernandez_Aravena_007D/Registro.html">Registro</a>
         </li>    
-        <label for="dark-mode" class="dark-mode-button">
 
-          <input id="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')">
-          Modo Oscuro
-          </label>
       </ul>
     </div>
   </nav>
 
 <div class="container">
   <div class="row">
-    <h1>Ingresar Productos</h1>
+    <h1 >Ingresar Productos</h1>
   </div>
 
   <div class="row">
     <form method="POST" action="#" id="formzapa">
-      {%csrf_token%}
+      {% csrf_token %}
+      <br><br>
       <div class="row">
         <div class="form-group">
+          <label for="id Zapatilla">Id zapatilla:</label>
+          <input type="text" class="form-control" id="idZapatilla">
          {{zapatilla_form.idZapatilla.label}}
          {{zapatilla_form.idZapatilla}}
 
         </div>
         <div class="form-group">
+          <label for="Talla Zapatilla">Talla Zapatilla:</label>
+          <input type="text" class="form-control" id="tallaZapatilla">
           {{zapatilla_form.talla_Zapatilla.label}}
           {{zapatilla_form.talla_Zapatilla}}
         </div>
@@ -75,24 +76,29 @@
 
       <div class="row">
         <div class="form-group">
+          <label for="id Ropa">Id Ropa:</label>
+          <input type="text" class="form-control" id="idRopa">
          {{ropa_form.idRopa.label}}
          {{ropa_form.idRopa}}
 
         </div>
         <div class="form-group">
+          <label for="Talla Zapatilla">Talla Ropa:</label>
+          <input type="text" class="form-control" id="tallaRopa">
           {{ropa_form.tallaRopa.label}}
           {{ropa_form.tallaRopa}}
         </div>
+      </div>
         <div class="row">
           <input type="submit" class="btn btn-danger" id="Enviar" values = "Enviar">
           <input type="reset" class="btn btn-primary" id="limpiar" value="limpiar">
         </div>
-      </div>
+      
     </form>
   </div>
 </div>
 
-
+<br><br><br>
  <!-- Footer -->
  <footer class="bg-dark text-center text-white">
   <div class="container p-4">

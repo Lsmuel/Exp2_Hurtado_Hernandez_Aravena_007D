@@ -11,10 +11,10 @@ class ZapatillaForm(forms.ModelForm):
 
         
         labels={
-            'idZapatilla': 'id_Zapatilla',
-            'tallaZapatilla': 'talla_Zapatilla',
+            'idZapatilla': 'id-Zapatilla:',
+            'tallaZapatilla': 'talla-Zapatilla:',
 
-    }
+            }
 
         widgets={
 
@@ -32,7 +32,7 @@ class ZapatillaForm(forms.ModelForm):
                         'placeholder': 'Ingrese talla de zapatilla'
 
                 }
-            ),
+            )
         
         }
 
@@ -61,6 +61,6 @@ class RopaForm(forms.ModelForm):
                         'placeholder': 'Ingrese talla de ropa'
 
                 }
-            ),
+            )
         
         }

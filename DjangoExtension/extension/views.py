@@ -1,3 +1,5 @@
+from django.http import request
+from .models import Zapatillas
 from django.shortcuts import render, redirect
 from .forms import ZapatillaForm, RopaForm
 # Create your views here.
@@ -28,4 +30,9 @@ def form_Ropa(request):
         ropa_form=RopaForm()
 
     return render(request, 'extension/form_crearZapatilla.html', {'ropa_form': ropa_form})
+
+def Ver(request):
+    zapatillas = Zapatillas.objects.all()
+    return render(request, 'extension/ver.html', context={'zapatillas':zapatillas})
+
 
